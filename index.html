@@ -3,59 +3,325 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  
-  <!-- SEO básico -->
   <meta name="description" content="Protege tu inversión y elimina la morosidad en la venta directa"/>
   <meta name="keywords" content="venta directa, morosidad, crédito, cobranza"/>
-  <meta name="author" content="Tu Nombre"/>
-
+  <meta name="author" content="Zantrik"/>
   <title>Zantrik — Gestión de Ventas</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet"/>
-
-  <!-- Tu CSS externo -->
   <link rel="stylesheet" href="assets/css/styles.css"/>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav id="navbar">
-    ...
+    <a href="#" class="nav-logo">zan<span>trik</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#ecosistema">Ecosistema</a></li>
+      <li><a href="#transformacion">Beneficios</a></li>
+      <li><a href="#cta">Demostración</a></li>
+    </ul>
+    <button class="nav-cta">Iniciar sesión</button>
+    <button class="menu-btn" id="menu-btn">&#9776;</button>
   </nav>
 
   <!-- HERO -->
-  <section id="hero">
-    ...
+  <section id="hero" class="hero">
+    <div class="hero-content animate">
+      <h1>Protege tu inversión y elimina la morosidad en la venta directa</h1>
+      <p>Gestionamos el riesgo de crédito, la cobranza y el cumplimiento normativo para que tu negocio crezca sin preocupaciones financieras.</p>
+      <a href="#cta" class="btn-primary">Solicita una demostración</a>
+      <small>Sin tarjeta de crédito · Sin compromisos · Respuesta en 24h</small>
+    </div>
+    <div class="hero-image animate">
+      <div class="hero-image-placeholder">
+        <svg viewBox="0 0 420 340" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <defs>
+            <linearGradient id="bgG" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#c8daf5"/>
+              <stop offset="100%" stop-color="#a8c4e8"/>
+            </linearGradient>
+            <linearGradient id="skinG" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#f0c8a0"/>
+              <stop offset="100%" stop-color="#d4956a"/>
+            </linearGradient>
+          </defs>
+          <rect width="420" height="340" fill="url(#bgG)"/>
+          <ellipse cx="280" cy="440" rx="110" ry="130" fill="#1a5fb4"/>
+          <circle cx="280" cy="120" r="52" fill="url(#skinG)"/>
+          <path d="M235 100 Q250 60 280 55 Q310 60 325 100 Q320 70 280 65 Q240 70 235 100Z" fill="#2a1a0e"/>
+          <rect x="268" y="168" width="24" height="30" rx="8" fill="url(#skinG)"/>
+          <ellipse cx="190" cy="250" rx="22" ry="60" fill="#1a5fb4" transform="rotate(-20 190 250)"/>
+          <ellipse cx="370" cy="250" rx="22" ry="60" fill="#1a5fb4" transform="rotate(20 370 250)"/>
+          <rect x="200" y="220" width="160" height="100" rx="10" fill="#0a2540" stroke="#3d9be9" stroke-width="2"/>
+          <rect x="210" y="228" width="140" height="84" rx="6" fill="#0d1f38"/>
+          <rect x="218" y="274" width="124" height="14" rx="4" fill="rgba(44,123,229,.4)"/>
+          <text x="255" y="284" fill="white" font-size="8" font-family="Montserrat,sans-serif" font-weight="700">Ver reporte →</text>
+          <rect x="20" y="80" width="130" height="50" rx="10" fill="white" opacity=".92"/>
+          <text x="35" y="101" fill="#0a2540" font-size="9" font-family="Montserrat,sans-serif" font-weight="700">Morosidad reducida</text>
+          <text x="35" y="118" fill="#1a5fb4" font-size="16" font-family="Montserrat,sans-serif" font-weight="800">-68%</text>
+          <rect x="280" y="30" width="120" height="48" rx="10" fill="white" opacity=".92"/>
+          <text x="295" y="51" fill="#0a2540" font-size="9" font-family="Montserrat,sans-serif" font-weight="700">Cartera sana</text>
+          <text x="295" y="68" fill="#28c840" font-size="16" font-family="Montserrat,sans-serif" font-weight="800">+94%</text>
+        </svg>
+      </div>
+    </div>
   </section>
 
   <!-- DIAGNÓSTICO -->
-  <section id="diagnostico">
-    ...
+  <section id="diagnostico" class="diagnosis">
+    <h2 class="animate">El diagnóstico del mercado</h2>
+    <p class="subtitle animate">Conoce los principales retos que enfrentan las empresas de venta directa</p>
+    <div class="cards-grid">
+      <div class="card animate">
+        <div class="card-icon">
+          <svg viewBox="0 0 72 72" fill="none">
+            <circle cx="36" cy="36" r="34" fill="#e8f0fb" stroke="#2c7be5" stroke-width="1.5"/>
+            <path d="M24 44L24 32L32 26L40 32L48 26L48 44Z" stroke="#2c7be5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M30 44L30 38L42 38L42 44" stroke="#2c7be5" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="36" cy="22" r="3" fill="#2c7be5"/>
+            <path d="M20 48L52 48" stroke="#2c7be5" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Alto índice de morosidad</h3>
+        <p>Las empresas de venta directa enfrentan pérdidas significativas por pagos tardíos o impagados de sus distribuidoras.</p>
+      </div>
+      <div class="card animate">
+        <div class="card-icon">
+          <svg viewBox="0 0 72 72" fill="none">
+            <circle cx="36" cy="36" r="34" fill="#e8f0fb" stroke="#2c7be5" stroke-width="1.5"/>
+            <circle cx="36" cy="36" r="14" stroke="#2c7be5" stroke-width="2" fill="none"/>
+            <path d="M36 28L36 36L42 40" stroke="#2c7be5" stroke-width="2" stroke-linecap="round"/>
+            <path d="M18 20L24 26M54 20L48 26M18 52L24 46M54 52L48 46" stroke="#2c7be5" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Gestión manual ineficiente</h3>
+        <p>Los procesos manuales consumen tiempo valioso y generan errores costosos para el negocio.</p>
+      </div>
+      <div class="card animate">
+        <div class="card-icon">
+          <svg viewBox="0 0 72 72" fill="none">
+            <circle cx="36" cy="36" r="34" fill="#e8f0fb" stroke="#2c7be5" stroke-width="1.5"/>
+            <path d="M28 50L28 38M36 50L36 30M44 50L44 22" stroke="#2c7be5" stroke-width="3" stroke-linecap="round"/>
+            <path d="M22 22L36 16L50 22" stroke="#2c7be5" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <circle cx="22" cy="24" r="3" fill="#2c7be5"/>
+            <circle cx="50" cy="24" r="3" fill="#2c7be5"/>
+          </svg>
+        </div>
+        <h3>Riesgo crediticio elevado</h3>
+        <p>Sin herramientas adecuadas, no pueden evaluar correctamente el riesgo de crédito de sus vendedoras.</p>
+      </div>
+    </div>
   </section>
 
   <!-- ECOSISTEMA -->
-  <section id="ecosistema">
-    ...
+  <section id="ecosistema" class="ecosystem">
+    <div class="ecosystem-inner">
+      <div class="ecosystem-text animate">
+        <h2>El ecosistema de gestión de ventas</h2>
+        <p>Una plataforma integral que conecta todos los procesos de tu empresa para una gestión eficiente y sin fricciones.</p>
+        <p>Automatiza cobranzas, evalúa riesgos y mantén tu cartera sana con inteligencia artificial.</p>
+        <a href="#cta" class="btn-primary">Conoce la plataforma</a>
+      </div>
+      <div class="dashboard-mock animate">
+        <div class="dash-header">
+          <div class="dash-dot red"></div>
+          <div class="dash-dot yellow"></div>
+          <div class="dash-dot green"></div>
+          <span class="dash-title">Panel de Control</span>
+        </div>
+        <div class="dash-row">
+          <div class="dash-card"><div class="label">Cartera Total</div><div class="value">$124,580</div></div>
+          <div class="dash-card"><div class="label">Recuperado</div><div class="value up">↑ 94%</div></div>
+          <div class="dash-card"><div class="label">Morosidad</div><div class="value down">↓ 6%</div></div>
+        </div>
+        <div class="dash-card full">
+          <div class="label">Rendimiento por zona</div>
+          <div class="dash-bar-row">
+            <div class="dash-bar-item"><span class="dash-bar-label">Zona Norte</span><div class="dash-bar-bg"><div class="dash-bar-fill" style="width:88%"></div></div></div>
+            <div class="dash-bar-item"><span class="dash-bar-label">Zona Sur</span><div class="dash-bar-bg"><div class="dash-bar-fill" style="width:72%"></div></div></div>
+            <div class="dash-bar-item"><span class="dash-bar-label">Zona Este</span><div class="dash-bar-bg"><div class="dash-bar-fill alt" style="width:65%"></div></div></div>
+            <div class="dash-bar-item"><span class="dash-bar-label">Zona Oeste</span><div class="dash-bar-bg"><div class="dash-bar-fill" style="width:91%"></div></div></div>
+          </div>
+        </div>
+        <div class="dash-card full">
+          <div class="label">Alertas activas</div>
+          <div class="badges-row">
+            <span class="badge red">3 Críticas</span>
+            <span class="badge yellow">7 Medias</span>
+            <span class="badge green">12 Bajas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section class="modules">
+    <h3 class="animate">Los tres módulos del sistema</h3>
+    <p class="sub animate">Todo lo que necesitas en una sola plataforma</p>
+    <div class="modules-grid">
+      <div class="module-card animate">
+        <div class="module-icon">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C10 4 5 9 5 16C5 23 10 28 16 28C22 28 27 23 27 16" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round" fill="none"/><path d="M21 4L27 10L21 16" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M27 10L16 10" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>IA Asistente Inteligente</h4>
+        <p>Automatiza el seguimiento de pagos y genera estrategias de cobranza personalizadas con inteligencia artificial.</p>
+      </div>
+      <div class="module-card animate">
+        <div class="module-icon">
+          <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="8" stroke="#1a5fb4" stroke-width="2" fill="none"/><path d="M16 10L16 16L20 18" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round"/><path d="M4 8L8 12M28 8L24 12" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h4>Data Cruzada del Sector</h4>
+        <p>Accede a inteligencia de mercado exclusiva para tomar decisiones de crédito más informadas.</p>
+      </div>
+      <div class="module-card animate">
+        <div class="module-icon">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M6 26L6 14L12 10L18 14L24 10L24 26Z" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M11 26L11 20L21 20L21 26" stroke="#1a5fb4" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="16" cy="6" r="3" stroke="#1a5fb4" stroke-width="2"/></svg>
+        </div>
+        <h4>Ecosistema de Pagos</h4>
+        <p>Integra múltiples canales de pago y ofrece opciones flexibles para mejorar la recuperación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN OSCURA -->
+  <section class="dark-section">
+    <div class="dark-section-inner">
+      <h2 class="animate">Potenciadores del sistema</h2>
+      <p class="animate">Tecnología de vanguardia que impulsa cada función de la plataforma.</p>
+      <div class="dark-grid">
+        <div class="dark-card animate"><div class="d-icon"><svg viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="white" stroke-width="1.5"/><path d="M11 7v4l3 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div><h5>Monitoreo en tiempo real</h5><p>Seguimiento continuo y alertas automáticas</p></div>
+        <div class="dark-card animate"><div class="d-icon"><svg viewBox="0 0 22 22" fill="none"><path d="M4 14l5-5 4 4 5-6" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div><h5>Análisis predictivo</h5><p>Modelos de IA que anticipan comportamientos de pago</p></div>
+        <div class="dark-card animate"><div class="d-icon"><svg viewBox="0 0 22 22" fill="none"><rect x="3" y="5" width="16" height="12" rx="2" stroke="white" stroke-width="1.5"/><path d="M3 9h16" stroke="white"/></svg></div><h5>Pagos integrados</h5><p>Múltiples métodos en una sola plataforma</p></div>
+        <div class="dark-card animate"><div class="d-icon"><svg viewBox="0 0 22 22" fill="none"><path d="M11 3L20 8V16L11 21L2 16V8L11 3Z" stroke="white" stroke-width="1.5"/></svg></div><h5>Seguridad bancaria</h5><p>Encriptación de nivel bancario en todos los datos</p></div>
+        <div class="dark-card animate"><div class="d-icon"><svg viewBox="0 0 22 22" fill="none"><circle cx="11" cy="8" r="4" stroke="white" stroke-width="1.5"/><path d="M4 20c0-3.31 3.13-6 7-6s7 2.69 7 6" stroke="white" stroke-width="1.5"/></svg></div><h5>Gestión de equipos</h5><p>Administra roles y permisos de tu fuerza de ventas</p></div>
+      </div>
+    </div>
   </section>
 
   <!-- TRANSFORMACIÓN -->
-  <section id="transformacion">
-    ...
+  <section id="transformacion" class="transformation">
+    <div class="transformation-header">
+      <h2 class="animate">Transformación y Beneficios<span class="blue-bar"></span></h2>
+      <div class="breadcrumb animate">Inicio / <strong>Productos</strong> / Plataforma</div>
+    </div>
+    <div class="body-grid">
+      <div class="benefit-cards">
+        <div class="benefit-card animate">
+          <div><h4>Flujo de Caja Sano</h4><p>Recupera hasta un 40% más de cartera vencida con nuestro sistema automatizado de cobranza inteligente.</p></div>
+          <div class="benefit-photo"><svg viewBox="0 0 130 100" fill="none" style="width:100%;height:100%;"><rect width="130" height="100" fill="#1a4070"/><circle cx="65" cy="32" r="20" fill="#e8c9a0"/><path d="M65 52 Q40 52 35 100 L95 100 Q90 52 65 52Z" fill="#2c5f9e"/></svg></div>
+        </div>
+        <div class="benefit-card animate">
+          <div><h4>De Cobrador a Estratega</h4><p>Libera a tu equipo de tareas repetitivas y enfócalos en actividades de alto valor.</p></div>
+          <div class="benefit-photo"><svg viewBox="0 0 130 100" fill="none" style="width:100%;height:100%;"><rect width="130" height="100" fill="#0d2d5e"/><circle cx="65" cy="30" r="22" fill="#d4a882"/><path d="M65 52 Q38 52 33 100 L97 100 Q92 52 65 52Z" fill="#1a5fb4"/></svg></div>
+        </div>
+        <div class="benefit-card animate">
+          <div><h4>Tranquilidad Total</h4><p>Toma decisiones con confianza respaldado por datos en tiempo real y reportes detallados.</p></div>
+          <div class="benefit-photo"><svg viewBox="0 0 130 100" fill="none" style="width:100%;height:100%;"><rect width="130" height="100" fill="#1a4070"/><circle cx="65" cy="30" r="21" fill="#f0d0b0"/><path d="M65 51 Q40 51 35 100 L95 100 Q90 51 65 51Z" fill="#2c7be5"/></svg></div>
+        </div>
+      </div>
+      <div class="stats-panel animate">
+        <svg viewBox="0 0 320 260" fill="none" style="width:100%;max-width:320px;margin:0 auto;">
+          <rect x="20" y="180" width="28" height="70" rx="4" fill="rgba(61,155,233,.4)"/>
+          <rect x="63" y="150" width="28" height="100" rx="4" fill="rgba(61,155,233,.5)"/>
+          <rect x="106" y="118" width="28" height="132" rx="4" fill="rgba(61,155,233,.6)"/>
+          <rect x="149" y="80" width="28" height="170" rx="4" fill="rgba(44,123,229,.75)"/>
+          <rect x="192" y="50" width="28" height="200" rx="4" fill="#2c7be5"/>
+          <rect x="235" y="22" width="28" height="228" rx="4" fill="#3d9be9"/>
+          <polyline points="34,165 77,135 120,103 163,65 206,38 249,10" stroke="#f5a623" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="34" cy="165" r="4" fill="#f5a623"/>
+          <circle cx="77" cy="135" r="4" fill="#f5a623"/>
+          <circle cx="120" cy="103" r="4" fill="#f5a623"/>
+          <circle cx="163" cy="65" r="4" fill="#f5a623"/>
+          <circle cx="206" cy="38" r="4" fill="#f5a623"/>
+          <circle cx="249" cy="10" r="4" fill="#f5a623"/>
+          <rect x="210" y="4" width="78" height="32" rx="8" fill="rgba(40,200,64,.2)" stroke="#28c840" stroke-width="1"/>
+          <text x="228" y="24" fill="#28c840" font-size="14" font-family="Montserrat,sans-serif" font-weight="800">↑ 68%</text>
+        </svg>
+        <div class="stats-label">Recuperación de cartera</div>
+        <div class="stats-sub">Promedio clientes activos 2024</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIANZA -->
+  <section class="trust">
+    <h3 class="animate">Confianza que respalda tu negocio</h3>
+    <div class="trust-grid">
+      <div class="trust-card animate"><div class="t-icon"><svg viewBox="0 0 22 22" fill="none"><path d="M11 2L20 7V17L11 21L2 17V7L11 2Z" stroke="white" stroke-width="1.5"/><path d="M7 11l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div><h5>Cero riesgo de impago</h5><p>Algoritmos predictivos que identifican riesgos antes de que se conviertan en problemas.</p></div>
+      <div class="trust-card animate"><div class="t-icon"><svg viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="9" stroke="white" stroke-width="1.5"/><path d="M7 11l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div><h5>Tecnología de seguros</h5><p>Garantías y seguros de crédito diseñados específicamente para venta directa.</p></div>
+      <div class="trust-card animate"><div class="t-icon"><svg viewBox="0 0 22 22" fill="none"><rect x="3" y="8" width="16" height="12" rx="2" stroke="white" stroke-width="1.5"/><path d="M7 8V6C7 4.34 8.34 3 10 3h2c1.66 0 3 1.34 3 3v2" stroke="white" stroke-width="1.5"/></svg></div><h5>Datos 100% seguros</h5><p>Encriptación de grado militar y cumplimiento con regulaciones de protección de datos.</p></div>
+    </div>
   </section>
 
   <!-- CTA FINAL -->
-  <section id="cta">
-    ...
+  <section id="cta" class="final-cta">
+    <div class="final-cta-content animate">
+      <h2>¿Listo para sanar su<br/>flujo de caja?</h2>
+      <p>Únase a las empresas que ya transformaron su gestión de crédito y cobranza con nuestra plataforma inteligente.</p>
+      <a href="#" class="btn-primary">Agenda tu demo gratuita</a>
+      <small>Sin compromisos · Configuración en menos de 24h</small>
+    </div>
+    <div class="cta-image animate">
+      <svg viewBox="0 0 500 300" fill="none" style="width:100%;height:100%;">
+        <defs><linearGradient id="ctaBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c8d8f0"/><stop offset="100%" stop-color="#a8c4e8"/></linearGradient></defs>
+        <rect width="500" height="300" fill="url(#ctaBg)"/>
+        <ellipse cx="250" cy="480" rx="150" ry="180" fill="#1a3a6e"/>
+        <circle cx="250" cy="105" r="65" fill="#e0b898"/>
+        <path d="M192 85 Q202 40 250 35 Q298 40 308 85 Q304 55 250 48 Q196 55 192 85Z" fill="#1a0a00"/>
+        <rect x="140" y="148" width="220" height="136" rx="10" fill="#0a2540" stroke="#3d9be9" stroke-width="2"/>
+        <rect x="150" y="158" width="200" height="116" rx="6" fill="#0d1f38"/>
+        <rect x="162" y="202" width="176" height="22" rx="5" fill="rgba(44,123,229,.5)"/>
+        <text x="196" y="217" fill="white" font-size="10" font-family="Montserrat,sans-serif" font-weight="700">Ver Resultados →</text>
+        <path d="M236 120 Q250 132 264 120" stroke="#c4845a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <circle cx="238" cy="106" r="5" fill="#2a1a0e"/>
+        <circle cx="262" cy="106" r="5" fill="#2a1a0e"/>
+      </svg>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer id="footer">
-    ...
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">zan<span>trik</span></span>
+        <p class="footer-desc">Plataforma integral de gestión de riesgo crediticio y cobranza para empresas de venta directa en Latinoamérica.</p>
+      </div>
+      <div>
+        <h6>Producto</h6>
+        <ul>
+          <li><a href="#">Características</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Integraciones</a></li>
+          <li><a href="#">Actualizaciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Empresa</h6>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Carreras</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Soporte</h6>
+        <ul>
+          <li><a href="#">Documentación</a></li>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Estado del sistema</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Zantrik. Todos los derechos reservados.</span>
+      <span>Términos · Privacidad · Cookies</span>
+    </div>
   </footer>
 
-  <!-- Tu JS externo — siempre al final del body -->
   <script src="assets/js/main.js"></script>
-
 </body>
 </html>
