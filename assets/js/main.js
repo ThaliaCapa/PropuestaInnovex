@@ -1,47 +1,48 @@
-// ============================================
-// NAVBAR — ocultar/mostrar al hacer scroll
-// ============================================
+// NAVBAR scroll
+const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
-  const navbar = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// ============================================
-// ANIMACIONES al hacer scroll
-// ============================================
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.animate').forEach(el => observer.observe(el));
-
-// ============================================
-// MENÚ MÓVIL
-// ============================================
+// MENÚ HAMBURGUESA
 const menuBtn = document.getElementById('menu-btn');
 const navLinks = document.getElementById('nav-links');
-
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
+// ANIMACIONES al hacer scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
-/*## 🎨 FASE 4 — FLUJO DE TRABAJO PROFESIONAL
+// SMOOTH SCROLL
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) { e.preventDefault(); window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' }); }
+  });
+});
 
-### Orden correcto para desarrollar
-Un profesional sigue siempre este orden:
-```
-1. Estructura HTML primero    → sin estilos, solo el esqueleto
-2. Estilos globales           → variables, reset, tipografía
-3. Sección por sección        → HTML + CSS juntos
-4. JavaScript al final        → interactividad cuando todo está listo
-5. Responsive                 → adaptar a móviles
-6. Revisión y limpieza        → eliminar código innecesario*/
+// BARRAS DASHBOARD animadas
+const dashObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.dash-bar-fill').forEach(bar => {
+        const w = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => { bar.style.width = w; }, 300);
+      });
+      dashObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+const dashboard = document.querySelector('.dashboard-mock');
+if (dashboard) dashObserver.observe(dashboard);
