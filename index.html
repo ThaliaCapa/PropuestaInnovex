@@ -1,31 +1,34 @@
-<html lang="es"><head>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INNOVEX – Protege tu inversión</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
   <header class="navbar">
     <div class="navbar__inner">
       <div class="navbar__brand">
-        <a class="navbar__brand-link" href="#" data-tab="home">
-          <div class="navbar__logo-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <circle cx="14" cy="14" r="13" stroke="white" stroke-width="1.5"></circle>
-              <path d="M8 14l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </div>
-          <span class="navbar__brand-name">INNOVEX</span>
-        </a>
+        <div class="navbar__logo">
+          <svg width="18" height="18" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="13" stroke="white" stroke-width="1.5"/>
+            <path d="M8 14l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="navbar__name">INNOVEX</span>
       </div>
       <nav class="navbar__links">
-        <a href="#" data-tab="home">Inicio</a>
-        <a href="#" data-tab="herramientas">Herramientas</a>
-        <a href="#" data-tab="beneficios">Beneficios</a>
-        <a href="#" data-tab="como-funciona" class="navbar__cta">Iniciar sesión</a>
+        <a href="#hero">Inicio</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#cta" class="navbar__btn">Iniciar sesión</a>
       </nav>
       <button class="navbar__hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
@@ -35,304 +38,566 @@
 
   <main>
 
-    <!-- TAB HOME -->
-    <section class="tab-section section-home" id="tab-home">
-      <div class="section-home__bg-shape"></div>
-      <div class="container section-home__inner">
-        <div class="section-home__text">
-          <p class="section-eyebrow">Plataforma de gestión de ventas</p>
-          <h1 class="section-home__title">Protege tu inversión y elimina la morosidad en la venta directa</h1>
-          <p class="section-home__subtitle">El riesgo de pérdida ante la venta indirecta está latente. Nosotros te ofrecemos la protección más efectiva y confiable del mercado, con análisis de datos en tiempo real.</p>
-          <div class="section-home__actions">
-            <a href="#" data-tab="como-funciona" class="btn btn--outline-white">Solicitar Demo</a>
-            <a href="#" data-tab="herramientas" class="btn btn--ghost">Regístrate Gratis</a>
+    <!-- ══════════════════════════════════════
+         HERO
+         ▸ Imagen principal: reemplaza .hero__img-placeholder
+           por <img src="tu-foto.png" alt="..." class="hero__main-img">
+         ▸ Estilos para img: width:100%; height:100%; object-fit:cover; object-position:top;
+    ══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-circle-1"></div>
+      <div class="hero-circle-2"></div>
+      <div class="hero__inner">
+
+        <!-- Columna izquierda: texto -->
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Protege tu inversión y <em>elimina</em><br>
+            la morosidad en la venta directa
+          </h1>
+          <p class="hero__sub">
+            Innovex te permite saber con quién estás haciendo negocios en Venezuela,
+            con la primera plataforma de evaluación y data cruzada para el sector.
+          </p>
+          <div class="hero__actions">
+            <a href="#cta" class="btn-primary">
+              Solicitar Demo y<br>Registrarte Gratis
+            </a>
           </div>
         </div>
-        <div class="section-home__visual">
-          <div class="section-home__img-card">
-            <div class="section-home__img-placeholder">
-              <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=600&amp;q=80&amp;fit=crop" alt="Mujer profesional">
-            </div>
-            <div class="section-home__badge section-home__badge--top">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 12l3-4 3 2 3-5 3 3" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-              <span>Riesgo Crediticio <strong>Activo</strong></span>
-            </div>
-            <div class="section-home__badge section-home__badge--bottom">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#22c55e" stroke-width="1.5"></circle><path d="M6 9l2 2 4-4" stroke="#22c55e" stroke-width="1.5" stroke-linecap="round"></path></svg>
-              <span>Inversión <strong>Protegida</strong></span>
-            </div>
+
+        <!-- Columna derecha: imagen + badges -->
+        <div class="hero__visual">
+          <!--
+            ════════════════════════════════
+            ESPACIO PARA IMAGEN PRINCIPAL
+            Reemplaza este div con:
+            <img src="ruta/a/tu/imagen.png" alt="Mujer profesional con tablet"
+                 style="width:100%;max-width:420px;height:480px;object-fit:cover;
+                        object-position:top;border-radius:24px 24px 0 0;">
+            ════════════════════════════════
+          -->
+          <div class="hero__img-placeholder">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <rect x="8" y="8" width="48" height="48" rx="8" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
+              <circle cx="26" cy="26" r="8" stroke="white" stroke-width="1.5"/>
+              <path d="M8 48l14-12 8 8 10-10 16 14" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="ph-label">📸 Coloca aquí tu imagen principal<br>(mujer profesional con tablet)</span>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="diagnosis">
-          <h2 class="diagnosis__title">El diagnóstico del mercado</h2>
-          <p class="diagnosis__subtitle">Problemas que están afectando la rentabilidad y el control de la venta directa</p>
-          <div class="diagnosis__cards">
-            <div class="diagnosis-card">
-              <div class="diagnosis-card__icon">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 4l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z" stroke="#134a74" stroke-width="1.5" stroke-linejoin="round"></path></svg>
-              </div>
-              <h3>Sigue a la<br>"Vendedora Advenediza"</h3>
-              <p>Conoce la persona que llega sola a tu empresa pero que al final te deja deudas impagables por su forma de operar.</p>
-            </div>
-            <div class="diagnosis-card">
-              <div class="diagnosis-card__icon">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="4" stroke="#134a74" stroke-width="1.5"></rect><path d="M10 16h12M10 11h12M10 21h8" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-              </div>
-              <h3>Elimina el Caos Administrativo</h3>
-              <p>Tenemos el conocimiento de millones de datos en tiempo real para ofrecer el análisis de riesgo más preciso del mercado.</p>
-            </div>
-            <div class="diagnosis-card">
-              <div class="diagnosis-card__icon">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="12" stroke="#134a74" stroke-width="1.5"></circle><path d="M16 10v6l4 2" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-              </div>
-              <h3>Aprovecha el tiempo</h3>
-              <p>No dejamos que un retrasado en pagar consuma tu tiempo y energía, ni te impida enfocarte en vender más.</p>
-            </div>
+
+          <!-- Badge: Análisis de riesgo -->
+          <div class="hero__badge hero__badge--tl">
+            <span class="badge-dot badge-dot--blue"></span>
+            <span>Análisis de riesgo</span>
           </div>
+
+          <!-- Badge: Inversión Protegida -->
+
+          <!--
+            ════════════════════════════════
+            ESPACIO PARA GRÁFICO / CARD DE ANALYTICS
+            Este elemento simulado puede reemplazarse
+            por un gráfico real o imagen de pantalla de la app.
+            ════════════════════════════════
+          -->
         </div>
       </div>
     </section>
 
-    <!-- TAB HERRAMIENTAS -->
-    <section class="tab-section section-tools" id="tab-herramientas">
+    <!-- ══════════════════════════════════════
+         DIAGNÓSTICO DEL MERCADO
+         ▸ Cada .diag-card__img-placeholder puede
+           reemplazarse por <img> de ícono/ilustración real
+    ══════════════════════════════════════ -->
+    <section class="diagnosis" id="diagnostico">
+      <div class="diagnosis-bg-circle-1"></div>
+      <div class="diagnosis-bg-circle-2"></div>
       <div class="container">
-        <div class="tools-hero">
-          <div class="tools-hero__text">
-            <p class="section-eyebrow">Módulos del sistema</p>
-            <h2 class="section-title">El ecosistema de<br>gestión de ventas</h2>
-            <p class="section-body">Una plataforma que combina análisis de riesgo y datos del sector con herramientas de gestión para tomar mejores decisiones.</p>
-          </div>
-          <div class="tools-hero__visual">
-            <div class="tools-hero__img-wrap">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&amp;q=80&amp;fit=crop" alt="Dashboard">
-            </div>
-          </div>
+        <div class="section-header-center">
+          <h2 class="section-heading">Diagnóstico del Mercado</h2>
         </div>
-        <div class="modules">
-          <div class="modules__header">
-            <h3>Los tres módulos del sistema</h3>
-            <p>Cada módulo cumple una función específica dentro del sistema</p>
+
+        <div class="diagnosis__grid">
+
+          <div class="diag-card">
+            <!--
+              ESPACIO PARA ÍCONO / ILUSTRACIÓN 1
+              Reemplaza por: <img src="icono-vendedora.svg" alt="..." width="80">
+            -->
+            <div class="diag-card__img-placeholder">
+              <span style="font-size:.62rem;text-align:center;">🖼️ Ícono<br>Vendedora</span>
+            </div>
+            <h3>Digale adiós a la<br>"Vendedora Saltamontes"</h3>
+            <p>Conoce la persona que llega sola a tu empresa pero que al final te deja deudas impagables.</p>
           </div>
-          <div class="modules__grid">
-            <div class="module-card">
-              <div class="module-card__img">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&amp;q=80&amp;fit=crop" alt="Semáforo Inteligente">
-              </div>
-              <div class="module-card__body">
-                <h4>El Semáforo Inteligente</h4>
-                <p>Al registrar o buscar una candidata, el sistema activa una alerta visual que le indica el nivel de riesgo crediticio de forma instantánea.</p>
-              </div>
+
+          <div class="diag-card">
+            <!--
+              ESPACIO PARA ÍCONO / ILUSTRACIÓN 2
+              Reemplaza por: <img src="icono-caos.svg" alt="..." width="80">
+            -->
+            <div class="diag-card__img-placeholder">
+              <span style="font-size:.62rem;text-align:center;">🖼️ Ícono<br>Caos Admin.</span>
             </div>
-            <div class="module-card module-card--reverse">
-              <div class="module-card__img">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&amp;q=80&amp;fit=crop" alt="Data Cruzada">
-              </div>
-              <div class="module-card__body">
-                <h4>Data Cruzada del Sector Cosmético</h4>
-                <p>Acceda a un historial de comportamiento real dentro del mercado venezolano, permitiéndole tomar decisiones basadas en datos, no en suposiciones.</p>
-              </div>
-            </div>
-            <div class="module-card">
-              <div class="module-card__img">
-                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&amp;q=80&amp;fit=crop" alt="Ecosistema">
-              </div>
-              <div class="module-card__body">
-                <h4>Ecosistema de gestión</h4>
-                <p>Funciona como un Ecosistema 360° que integra las siguientes herramientas clave para maximizar el control de tu negocio.</p>
-              </div>
-            </div>
+            <h3>Elimina el Caos Administrativo</h3>
+            <p>Millones de datos en tiempo real para ofrecer el análisis de riesgo más preciso del mercado.</p>
           </div>
-        </div>
-        <div class="ecosystem">
-          <h3 class="ecosystem__title">Herramientas del ecosistema:</h3>
-          <div class="ecosystem__grid">
-            <div class="ecosystem__divider ecosystem__divider--1"></div>
-            <div class="ecosystem__divider ecosystem__divider--2"></div>
-            <div class="ecosystem__item">
-              <div class="ecosystem__icon">
-                <div class="img-placeholder img-placeholder--icon">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.6"><rect x="4" y="4" width="32" height="32" rx="6" stroke="#134a74" stroke-width="1.5"></rect><path d="M10 14h20M10 20h14M10 26h10" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                </div>
-              </div>
-              <p><strong>CRM Estratégico</strong>Para crear campañas y ofertar de manera dinámica.</p>
+
+          <div class="diag-card">
+            <!--
+              ESPACIO PARA ÍCONO / ILUSTRACIÓN 3
+              Reemplaza por: <img src="icono-tiempo.svg" alt="..." width="80">
+            -->
+            <div class="diag-card__img-placeholder">
+              <span style="font-size:.62rem;text-align:center;">🖼️ Ícono<br>Tiempo</span>
             </div>
-            <div class="ecosystem__item">
-              <div class="ecosystem__icon">
-                <div class="img-placeholder img-placeholder--icon">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.6"><path d="M6 10h28l-3 14H9L6 10z" stroke="#134a74" stroke-width="1.5" stroke-linejoin="round"></path><circle cx="14" cy="32" r="2" stroke="#134a74" stroke-width="1.5"></circle><circle cx="26" cy="32" r="2" stroke="#134a74" stroke-width="1.5"></circle></svg>
-                </div>
-              </div>
-              <p><strong>Marketplace Dinámico</strong>Donde las mejores vendedoras se conectan con las mejores marcas.</p>
-            </div>
-            <div class="ecosystem__item">
-              <div class="ecosystem__icon">
-                <div class="img-placeholder img-placeholder--icon">
-                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" opacity="0.6"><rect x="12" y="4" width="16" height="32" rx="4" stroke="#134a74" stroke-width="1.5"></rect><circle cx="20" cy="32" r="1.5" fill="#134a74" opacity="0.6"></circle><path d="M16 12h8M16 17h6" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                </div>
-              </div>
-              <p><strong>App para Líderes</strong>Monitoreo de vendedores, cobranza y progreso en tiempo real desde el celular.</p>
-            </div>
+            <h3>Aprovecha el Tiempo</h3>
+            <p>No dejamos que un moroso consuma tu tiempo y energía ni te impida enfocarte en vender más.</p>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- TAB BENEFICIOS -->
-    <section class="tab-section section-benefits" id="tab-beneficios">
+    <!-- ══════════════════════════════════════
+         SEMÁFORO INTELIGENTE
+    ══════════════════════════════════════ -->
+    <section class="semaforo" id="herramientas">
+      <div class="semaforo-bg-circle"></div>
       <div class="container">
-        <div class="benefits-header">
-          <div class="benefits-header__text">
-            <p class="section-eyebrow">Resultados reales</p>
-            <h2 class="section-title">Transformación y<br>Beneficios</h2>
-            <p class="section-body">La diferencia después de usar Innovex no es solo tecnológica. Es la nueva forma de dirigir tu negocio.</p>
-          </div>
-          <div class="benefits-header__visual">
-            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&amp;q=80&amp;fit=crop" alt="Crecimiento" style="width:100%;height:100%;object-fit:cover;border-radius:36px;">
-          </div>
-        </div>
-        <div class="benefits-tags">
-          <span class="benefits-tag benefits-tag--active">Flujo de caja sano</span>
-          <span class="benefits-tag">Más control</span>
-          <span class="benefits-tag">Menos morosidad</span>
-        </div>
-        <div class="benefits-list">
-          <div class="benefit-card">
-            <div class="benefit-card__body">
-              <h3>Flujo de Caja Sano</h3>
-              <p>Recupere y disponga del 60% de su inversión en solo 30 días de uso constante.</p>
+        <div class="semaforo__inner">
+
+          <div class="semaforo__visual">
+            <div class="traffic-light">
+              <div class="tl-dot tl-red"></div>
+              <div class="tl-dot tl-yellow"></div>
+              <div class="tl-dot tl-green"></div>
             </div>
-            <div class="benefit-card__img">
-              <img src="https://images.unsplash.com/photo-1607863680198-23d4b2565df0?w=600&amp;q=80&amp;fit=crop&amp;crop=top" alt="Flujo de caja">
+            <div class="warn-badge">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
+                <path d="M8 2L14 13H2L8 2Z" stroke="#e65100" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8 7v3M8 11.5v.5" stroke="#e65100" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              ¡Riesgo detectado!
             </div>
           </div>
-          <div class="benefit-card benefit-card--reverse">
-            <div class="benefit-card__body">
-              <h3>De Cobrador a Estratega</h3>
-              <p>Deje de perseguir personas para cobrar y dedíquese a reclutar líderes y crear nuevos incentivos para su negocio.</p>
-            </div>
-            <div class="benefit-card__img">
-              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&amp;q=80&amp;fit=crop&amp;crop=top" alt="Estratega">
-            </div>
+
+          <div class="semaforo__text">
+            <span class="section-label">Módulo 1</span>
+            <h2 class="section-heading">El Semáforo Inteligente</h2>
+            <p class="section-sub">
+              Al registrar o buscar una candidata, el sistema activa una alerta visual
+              que indica el nivel de riesgo crediticio de forma instantánea.<br><br>
+              <strong>Verde</strong> = segura &nbsp;·&nbsp;
+              <strong>Amarillo</strong> = precaución &nbsp;·&nbsp;
+              <strong>Rojo</strong> = riesgo alto
+            </p>
           </div>
-          <div class="benefit-card">
-            <div class="benefit-card__body">
-              <h3>Tranquilidad Total</h3>
-              <p>Reduzca la morosidad y sienta la seguridad de saber exactamente a quién le está ofreciendo crédito.</p>
-            </div>
-            <div class="benefit-card__img">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&amp;q=80&amp;fit=crop&amp;crop=top" alt="Tranquilidad">
-            </div>
-          </div>
-        </div>
-        <div class="trust">
-          <h3 class="trust__title">Confianza que respalda tu negocio</h3>
-          <p class="trust__subtitle">Innovex combina tecnología probada, simplicidad de uso y un modelo diseñado para que su empresa crezca con seguridad.</p>
-          <div class="trust__cards">
-            <div class="trust-card">
-              <div class="trust-card__icon">
-                <div class="img-placeholder img-placeholder--trust">
-                  <svg width="52" height="52" viewBox="0 0 56 56" fill="none" opacity="0.5"><rect x="8" y="16" width="40" height="28" rx="4" stroke="#134a74" stroke-width="1.5"></rect><path d="M20 30l5 5 11-11" stroke="#134a74" stroke-width="2" stroke-linecap="round"></path></svg>
-                </div>
-              </div>
-              <h4>Éxito Tecnológico Probado</h4>
-              <p>Implementamos un modelo de éxito similar al de plataformas como Cashea, adaptado para la venta directa.</p>
-            </div>
-            <div class="trust-card">
-              <div class="trust-card__icon">
-                <div class="img-placeholder img-placeholder--trust">
-                  <svg width="52" height="52" viewBox="0 0 56 56" fill="none" opacity="0.5"><rect x="16" y="6" width="24" height="44" rx="6" stroke="#134a74" stroke-width="1.5"></rect><circle cx="28" cy="44" r="2" stroke="#134a74" stroke-width="1.5"></circle><path d="M22 20h12M22 27h8" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                </div>
-              </div>
-              <h4>Tecnología Amigable</h4>
-              <p>Si sabe usar WhatsApp, ya sabe usar Innovex. El miedo tecnológico no es una barrera para su equipo.</p>
-            </div>
-            <div class="trust-card">
-              <div class="trust-card__icon">
-                <div class="img-placeholder img-placeholder--trust">
-                  <svg width="52" height="52" viewBox="0 0 56 56" fill="none" opacity="0.5"><circle cx="20" cy="28" r="10" stroke="#134a74" stroke-width="1.5"></circle><circle cx="36" cy="28" r="10" stroke="#134a74" stroke-width="1.5"></circle><path d="M28 22v12" stroke="#134a74" stroke-width="1.5" stroke-linecap="round"></path></svg>
-                </div>
-              </div>
-              <h4>Modelo Ganar-Ganar</h4>
-              <p>La aplicación se paga sola mediante un porcentaje sobre la venta cobrada con éxito.</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- TAB COMO FUNCIONA -->
-    <section class="tab-section section-cta" id="tab-como-funciona">
-      <div class="section-cta__bg"></div>
-      <div class="container section-cta__inner">
-        <div class="section-cta__text">
-          <p class="section-eyebrow">Comienza hoy</p>
-          <h2 class="section-cta__title">¿Listo para sanar su<br>flujo de caja?</h2>
-          <p class="section-cta__desc">Descargue la app, registre sus datos y firme su contrato digital para comenzar hoy mismo.</p>
-          <blockquote class="section-cta__quote">"No dejes que la morosidad detenga tu crecimiento. Regístrate en la preventa de Innovex hoy mismo."</blockquote>
-          <a href="#" class="btn btn--white-solid">Quiero mi Escudo Mágico Ahora</a>
+    <!-- ══════════════════════════════════════
+         DATA CRUZADA
+         ▸ .data-cruzada__visual = espacio para gráfico
+           de analytics / captura de pantalla de la plataforma
+    ══════════════════════════════════════ -->
+    <section class="data-cruzada">
+      <div class="container">
+        <div class="data-cruzada__inner">
+
+          <div>
+            <span class="section-label">Módulo 2</span>
+            <h2 class="section-heading">Data Cruzada del<br>Sector Cosmético</h2>
+            <p class="section-sub">
+              Acceda a un historial de comportamiento real dentro del mercado venezolano,
+              permitiéndole tomar decisiones basadas en datos, no en suposiciones.
+            </p>
+          </div>
+
+          <!--
+            ESPACIO PARA GRÁFICO / IMAGEN DE ANALYTICS
+            Reemplaza el div interno por:
+            <img src="grafico-data.png" alt="Data analytics" style="width:100%;height:100%;object-fit:cover;">
+          -->
+          <div class="data-cruzada__visual">
+            <div class="img-placeholder">
+              <svg width="52" height="52" viewBox="0 0 64 64" fill="none">
+                <rect x="8" y="8" width="48" height="48" rx="6" stroke="white" stroke-width="1.5" stroke-dasharray="4 3"/>
+                <path d="M16 44l8-10 8 6 10-14 6 8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>📊 Coloca aquí tu gráfico<br>o captura de la plataforma</span>
+            </div>
+          </div>
+
         </div>
-        <div class="section-cta__visual">
-          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&amp;q=80&amp;fit=crop" alt="App móvil Innovex">
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ECOSISTEMA 360°
+         ▸ El laptop mock simula el dashboard.
+           Puedes reemplazarlo por una captura real
+           dentro de un wrapper con border-radius.
+    ══════════════════════════════════════ -->
+    <section class="ecosystem" id="ecosistema">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Módulo 3</span>
+          <h2 class="section-heading">Ecosistema 360°</h2>
+          <p class="section-sub">
+            Una plataforma integrada con todas las herramientas que necesitas para gestionar tu negocio
+          </p>
         </div>
+
+        <!--
+          ESPACIO PARA CAPTURA DE PANTALLA DEL DASHBOARD + APP
+          Puedes reemplazar todo el bloque .ecosystem__laptop
+          por una imagen real del mockup de la plataforma:
+          <div class="ecosystem__laptop">
+            <img src="mockup-plataforma.png" alt="Dashboard Innovex" style="max-width:720px;border-radius:12px;">
+          </div>
+        -->
+        <div class="ecosystem__laptop">
+          <div class="devices-wrap">
+            <div class="laptop-mock">
+              <div class="laptop-screen">
+                <div class="laptop-sidebar">
+                  <div class="ls-item ls-item--active"></div>
+                  <div class="ls-item"></div>
+                  <div class="ls-item"></div>
+                  <div class="ls-item"></div>
+                  <div class="ls-item"></div>
+                </div>
+                <div class="laptop-main">
+                  <div class="lm-row lm-row--hd"></div>
+                  <div class="lm-row" style="width:78%"></div>
+                  <div class="lm-row" style="width:58%"></div>
+                  <div class="lm-grid">
+                    <div class="lm-block" style="background:#1976d2;opacity:.7;"></div>
+                    <div class="lm-block" style="background:#e8f4fd;border:1px solid #bdd6f0;"></div>
+                  </div>
+                  <div class="lm-row" style="width:68%"></div>
+                  <div class="lm-row" style="width:88%"></div>
+                </div>
+              </div>
+              <div class="laptop-notch"></div>
+            </div>
+            <div class="phone-mock">
+              <div class="phone-screen">
+                <div class="pr pr--blue"></div>
+                <div class="pr"></div>
+                <div class="pr"></div>
+                <div style="background:#1976d2;border-radius:4px;height:20px;opacity:.7;margin:.2rem 0;"></div>
+                <div class="pr"></div>
+                <div class="pr"></div>
+                <div class="pr pr--blue" style="opacity:.45;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ecosystem__tools">
+          <div class="eco-tool">
+            <div class="eco-tool__icon">
+              <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+                <rect x="3" y="3" width="26" height="26" rx="5" stroke="#1b4f8a" stroke-width="1.5"/>
+                <path d="M8 12h16M8 17h12M8 22h8" stroke="#1b4f8a" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4>CRM Estratégico</h4>
+            <p>Para crear campañas y ofertar de manera dinámica a tus mejores clientes.</p>
+          </div>
+          <div class="eco-tool">
+            <div class="eco-tool__icon">
+              <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+                <path d="M4 8h24l-3 14H7L4 8z" stroke="#1b4f8a" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="11" cy="27" r="2" stroke="#1b4f8a" stroke-width="1.5"/>
+                <circle cx="22" cy="27" r="2" stroke="#1b4f8a" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h4>Marketplace Dinámico</h4>
+            <p>Donde las mejores vendedoras se conectan con las mejores marcas del sector.</p>
+          </div>
+          <div class="eco-tool">
+            <div class="eco-tool__icon">
+              <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+                <rect x="10" y="3" width="12" height="26" rx="3" stroke="#1b4f8a" stroke-width="1.5"/>
+                <circle cx="16" cy="26" r="1.5" fill="#1b4f8a"/>
+                <path d="M13 9h6M13 13h5" stroke="#1b4f8a" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4>App para Líderes</h4>
+            <p>Monitoreo, cobranza y progreso en tiempo real desde tu celular.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FLUJO – CÓMO FUNCIONA
+         ▸ Los íconos circulares (.flow-card__icon) pueden
+           reemplazarse por imágenes SVG/PNG reales
+    ══════════════════════════════════════ -->
+    <section class="flow" id="beneficios">
+      <div class="flow-bg-l"></div>
+      <div class="flow-bg-r"></div>
+      <div class="container">
+        <div class="section-header-center">
+          <span class="section-label">Cómo funciona</span>
+          <h2 class="section-heading">Impulsa tu Negocio con Innovex</h2>
+          <p class="section-sub">Confianza, Facilidad y Crecimiento</p>
+        </div>
+
+        <div class="flow__grid">
+
+          <div class="flow-card">
+            <!--
+              ESPACIO PARA ÍCONO 1
+              Reemplaza .flow-card__icon por:
+              <img src="icono-flujo-caja.svg" alt="Flujo de Caja" width="78" style="border-radius:50%;">
+            -->
+            <div class="flow-card__icon">
+              <svg width="34" height="34" viewBox="0 0 40 40" fill="none">
+                <path d="M20 8l4 12h12l-10 7 4 12L20 31l-10 8 4-12-10-7h12z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4>Flujo de Caja Sano</h4>
+            <p>Recupere el 60% de su inversión en solo 30 días de uso constante.</p>
+          </div>
+
+          <div class="flow-card">
+            <!--
+              ESPACIO PARA ÍCONO 2
+              Reemplaza .flow-card__icon por:
+              <img src="icono-estratega.svg" alt="Estratega" width="78" style="border-radius:50%;">
+            -->
+            <div class="flow-card__icon">
+              <svg width="34" height="34" viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="14" r="8" stroke="white" stroke-width="1.5"/>
+                <path d="M8 36c0-7 5-12 12-12s12 5 12 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M28 24l6-4M34 26l-4 2" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4>De Cobrador a Estratega</h4>
+            <p>Deje de perseguir morosos y dedíquese a reclutar líderes de ventas.</p>
+          </div>
+
+          <div class="flow-card">
+            <!--
+              ESPACIO PARA ÍCONO 3
+              Reemplaza .flow-card__icon por:
+              <img src="icono-tranquilidad.svg" alt="Tranquilidad" width="78" style="border-radius:50%;">
+            -->
+            <div class="flow-card__icon">
+              <svg width="34" height="34" viewBox="0 0 40 40" fill="none">
+                <path d="M20 6l12 5v10c0 8-12 17-12 17S8 29 8 21V11l12-5z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M14 21l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4>Tranquilidad Total</h4>
+            <p>Sepa exactamente a quién le ofrece crédito y reduzca la morosidad.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         IMPULSA TU NEGOCIO (CTA AZUL)
+         ▸ .phone-img-ph = espacio para captura de la app móvil
+    ══════════════════════════════════════ -->
+    <section class="impulsa">
+      <div class="impulsa-circle"></div>
+      <div class="container">
+        <div class="impulsa__inner">
+
+          <div class="impulsa__text">
+            <span class="impulsa__label">Únete hoy</span>
+            <h2 class="impulsa__title">
+              Impulsa tu Negocio con Innovex.<br>
+              Confianza, Facilidad y Crecimiento.
+            </h2>
+            <p class="impulsa__sub">
+              Si sabe usar WhatsApp, ya sabe usar Innovex.
+              La aplicación se paga sola con la venta cobrada.
+            </p>
+            <a href="#cta" class="btn-outline-white">Ver cómo funciona →</a>
+          </div>
+
+          <div class="impulsa__visual">
+            <!--
+              ESPACIO PARA CAPTURA DE LA APP MÓVIL
+              Reemplaza .phone-img-ph por la imagen del celular:
+              <img src="app-screenshot.png" alt="App Innovex"
+                   style="width:115px;border-radius:20px;box-shadow:0 14px 44px rgba(0,0,0,.42);">
+            -->
+            <div class="phone-img-ph">
+              📱 Coloca aquí captura de la app
+            </div>
+
+            <div class="impulsa__pills">
+              <div class="pill">
+                <div class="pill-icon">
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="6" stroke="white" stroke-width="1.5"/>
+                    <path d="M5 8l2 2 4-4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                Confianza
+              </div>
+              <div class="pill">
+                <div class="pill-icon">
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none">
+                    <path d="M8 2v12M2 8h12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                Facilidad
+              </div>
+              <div class="pill">
+                <div class="pill-icon">
+                  <svg width="11" height="11" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 12l3-4 3 2 3-5 3 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                Crecimiento
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ¿LISTO PARA SANAR SU FLUJO DE CAJA?
+         ▸ .step__icon-ph = espacio para íconos de cada paso
+    ══════════════════════════════════════ -->
+    <section class="cta-steps" id="cta">
+      <div class="container">
+
+        <h2 class="cta-steps__title">
+          ¿LISTO PARA <span>SANAR</span><br>SU FLUJO DE CAJA?
+        </h2>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="step__num">1</div>
+            <!--
+              ESPACIO PARA ÍCONO PASO 1
+              Reemplaza .step__icon-ph por:
+              <img src="icono-descarga.svg" alt="Descarga la App" width="84">
+            -->
+            <div class="step__icon-ph">
+              <span style="font-size:.62rem;">🖼️ Ícono<br>Descarga App</span>
+            </div>
+            <h4>Descarga la App</h4>
+            <p>Disponible para Android e iOS. Instalación en menos de 2 minutos.</p>
+          </div>
+
+          <div class="step">
+            <div class="step__num">2</div>
+            <!--
+              ESPACIO PARA ÍCONO PASO 2
+              Reemplaza .step__icon-ph por:
+              <img src="icono-registro.svg" alt="Registra tus Datos" width="84">
+            -->
+            <div class="step__icon-ph">
+              <span style="font-size:.62rem;">🖼️ Ícono<br>Registro</span>
+            </div>
+            <h4>Registra tus Datos</h4>
+            <p>Completa tu perfil y datos de empresa en pocos pasos sencillos.</p>
+          </div>
+
+          <div class="step">
+            <div class="step__num">3</div>
+            <!--
+              ESPACIO PARA ÍCONO PASO 3
+              Reemplaza .step__icon-ph por:
+              <img src="icono-contrato.svg" alt="Firma tu Contrato" width="84">
+            -->
+            <div class="step__icon-ph">
+              <span style="font-size:.62rem;">🖼️ Ícono<br>Contrato</span>
+            </div>
+            <h4>Firma tu Contrato</h4>
+            <p>Firma digital en segundos y comienza a proteger tu inversión hoy.</p>
+          </div>
+
+        </div>
+
+        <!-- CTA Banner final -->
+        <div class="cta-banner">
+          <p class="cta-banner__quote">
+            No dejes que la morosidad<br>
+            <em>Detenga tu crecimiento.</em>
+          </p>
+          <a href="#" class="btn-cta">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            QUIERO MI ESCUDO MÁGICO AHORA
+          </a>
+        </div>
+
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER siempre visible -->
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__cols">
-        <div class="footer__brand">
-          <div class="footer__brand-logo">
-            <div class="navbar__logo-icon">
-              <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="13" stroke="white" stroke-width="1.5"></circle><path d="M8 14l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-            </div>
-            <span>INNOVEX</span>
-          </div>
-          <p>Protege tu inversión y elimina la morosidad en la venta directa</p>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo-wrap">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="13" stroke="white" stroke-width="1.5"/>
+            <path d="M8 14l4 4 8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
-        <div class="footer__col">
-          <h5>Sobre la plataforma</h5>
-          <ul>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Centro de ayuda</a></li>
-            <li><a href="#">Reportar un problema</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h5>Ayuda</h5>
-          <ul>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Uso de datos</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Aviso legal</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h5>Legal</h5>
-          <ul>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Política de privacidad</a></li>
-            <li><a href="#">Aviso legal</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h5>Redes sociales</h5>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>© 2026 Innovex. Todos los derechos reservados.</p>
+        <span class="footer__name">INNOVEX</span>
+        <p class="footer__copy">© 2026 Innovex. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
-  <script src="assets/js/main.js"></script>
 
-</body></html>
+  <script>
+    // Hamburger menu
+    const hamburger = document.querySelector('.navbar__hamburger');
+    const navLinks  = document.querySelector('.navbar__links');
+    if (hamburger) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('navbar__links--open');
+      });
+    }
+    document.querySelectorAll('.navbar__links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('navbar__links--open');
+      });
+    });
+
+    // Smooth entrance animations on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.diag-card, .eco-tool, .flow-card, .step').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(22px)';
+      el.style.transition = 'opacity .5s ease, transform .5s ease';
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
