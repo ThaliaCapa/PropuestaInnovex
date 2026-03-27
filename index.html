@@ -17,13 +17,13 @@
           <div class="navbar__logo">
             <img src="assets/images/LogoInicio.png" alt="Logo" />
           </div>
-          <span class="navbar__name">INNOVEX</span>
         </div>
         <nav class="navbar__links">
-          <a href="#hero">Inicio</a>
-          <a href="#herramientas">Herramientas</a>
-          <a href="#beneficios">Beneficios</a>
-          <a href="#cta" class="navbar__btn">Iniciar sesión</a>
+          <a href="#hero">SOLUCIONES</a>
+          <a href="#herramientas">CÓMO FUNCIONA</a>
+          <a href="#beneficios">CLIENTE</a>
+          <a href="#beneficios">CONTACTO</a>
+          <a href="#cta" class="navbar__btn">HABLA CON UN ASESOR</a>
         </nav>
         <button class="navbar__hamburger" aria-label="Menú">
           <span></span><span></span><span></span>
@@ -34,23 +34,28 @@
     <main>
       <!-- ══════════════════════════════════════
          HERO
-         ─────────────────────────────────────
-         IMÁGENES:
-         · Gráfico:  assets/images/grafico1.jpeg   → clase .hero__grafico
-         · Mujer:    assets/images/mujer01.jpeg    → clase .hero__mujer
     ══════════════════════════════════════ -->
       <section>
-        <div style="display: flex; background-color: whitesmoke; position: relative;">
+        <div
+          style="
+            display: flex;
+            background-color: whitesmoke;
+            position: relative;
+          "
+        >
           <img src="/assets/images/PortadaMin.png" alt="" />
           <div class="hero__text">
             <h1 class="hero__title">
-              Protege tu inversión y <em>elimina</em>
-              la morosidad en la venta directa
+              Protege tu inversión y
+              <em>elimina la morosidad en la venta directa</em>
             </h1>
+            <h3 class="hero__sub1">
+              Deje de adivinar a quién le entrega su mercancía.
+            </h3>
             <p class="hero__sub">
-              Innovex te permite saber con quién estás haciendo negocios en
-              Venezuela, con la primera plataforma de evaluación y data cruzada
-              para el sector.
+              Innovex es el primer buró crediticio con data cruzada que le
+              permite saber exactamente con quién está haciendo negocios en
+              Venezuela.
             </p>
             <div class="hero__actions">
               <a href="#cta" class="btn-primary">
@@ -62,10 +67,7 @@
           <img
             src="/assets/images/SrtaEjecutiva.png"
             alt=""
-            style="position: absolute;
-            right: 0;
-            top: -35;
-            "
+            style="position: absolute; right: 0; top: -35"
           />
         </div>
       </section>
@@ -87,8 +89,9 @@
                   transform 0.6s;
               "
             >
+
               <div class="diag-card__illustration">
-              <img src="/assets/images/diagnosticoMercado1.png" alt="" /> 
+                <img src="/assets/images/diagnosticoMercado1.png" alt="" />
               </div>
               <div class="diag-card__body">
                 <h3>Dígale adiós a la<br />"Vendedora Saltamontes"</h3>
@@ -110,7 +113,7 @@
               "
             >
               <div class="diag-card__illustration">
-               <img src="/assets/images/diagnosticoMercado2.png" alt="" />
+                <img src="/assets/images/diagnosticoMercado2.png" alt="" />
               </div>
               <div class="diag-card__body">
                 <h3>Elimine el Caos<br />Administrativo</h3>
@@ -164,7 +167,7 @@
           <div class="data-cruzada__inner">
             <div class="data-cruzada__text">
               <h2 class="section-heading">Data Cruzada del Sector Cosmético</h2>
-              <p class="section-sub">
+              <p class="section-sub2">
                 Acceda a un historial de comportamiento real dentro del mercado
                 venezolano, permitiéndole tomar decisiones basadas en datos, no
                 en suposiciones.
@@ -174,26 +177,34 @@
           </div>
         </div>
       </section>
+      <br>
 
       <!-- ECOSISTEMA 360° -->
-       <div>
-        <img src="/assets/images/sistema360.png" alt="" />
-       </div>
-       
-      <!-- FLUJO – IMPULSA TU NEGOCIO -->
-      <div>
-        <img src="/assets/images/sistema2.png" alt="" />
+      <div class="container">
+        <div>
+          <img src="/assets/images/sistema360.png" alt="" />
+        </div>
       </div>
+      <br>
+
+      <!-- FLUJO – IMPULSA TU NEGOCIO -->
+      <div class="container">
+        <div>
+          <img src="/assets/images/sistema2.png" alt="" />
+        </div>
+      </div>
+      <br>
 
       <div class="container">
-          <h2 class="cta-steps__title">
-            Impulsa tu Negocio con Innovex: <br>
-            Confianza, Facilidad y Crecimiento 
-          </h2>
-          <div>
-            <img src="/assets/images/impulsaNegocio.png" alt="" />
-          </div>
+        <h2 class="cta-steps__title">
+          Impulsa tu Negocio con Innovex: <br />
+          Confianza, Facilidad y Crecimiento
+        </h2>
+        <div>
+          <img src="/assets/images/impulsaNegocio.png" alt="" />
         </div>
+      </div>
+      <br>
 
       <!-- ¿LISTO PARA SANAR? -->
       <section class="cta-steps" id="cta">
@@ -319,9 +330,14 @@
               No dejes que la morosidad<br />
               <em>Detenga tu crecimiento.</em>
             </p>
+            <br>
+             <p class="cta-banner__quote2">
+              Regístrate en la preventa de Innovex hoy mismo
+            </p>
+            
             <a href="#" class="btn-cta">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-               <img src="/assets/images/Icono.png" alt="" />
+                <img src="/assets/images/Icono.png" alt="" />
               </svg>
               QUIERO MI ESCUDO MÁGICO AHORA
             </a>
@@ -334,7 +350,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
-           <img src="/assets/images/LogoFinal.png" alt="" />
+          <img src="/assets/images/LogoFinal.png" alt="" />
         </div>
       </div>
     </footer>
