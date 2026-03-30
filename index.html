@@ -1,394 +1,237 @@
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Protege tu inversión</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovex – Protege tu inversión</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
+
     <!-- NAVBAR -->
     <header class="navbar">
       <div class="navbar__inner">
-        <div class="navbar__brand">
-          <div class="navbar__logo">
-            <img src="assets/images/LogoInicio.png" alt="Logo" />
-          </div>
+        <div class="navbar__logo">
+          <img src="assets/images/LogoInicio.png" alt="Innovex Logo">
         </div>
         <nav class="navbar__links">
           <a href="#hero">SOLUCIONES</a>
           <a href="#herramientas">CÓMO FUNCIONA</a>
           <a href="#beneficios">CLIENTE</a>
-          <a href="#beneficios">CONTACTO</a>
+          <a href="#contacto">CONTACTO</a>
           <a href="#cta" class="navbar__btn">HABLA CON UN ASESOR</a>
         </nav>
-        <button class="navbar__hamburger" aria-label="Menú">
+        <button class="navbar__hamburger" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
       </div>
     </header>
 
     <main>
-      <!-- ══════════════════════════════════════
-         HERO
-    ══════════════════════════════════════ -->
-      <section>
-        <div
-          style="
-            display: flex;
-            background-color: whitesmoke;
-            position: relative;
-          "
-        >
-          <img src="/assets/images/PortadaMin.png" alt="" />
-          <div class="hero__text">
-            <h1 class="hero__title">
-              Protege tu inversión y
-              <em>elimina la morosidad en la venta directa</em>
-            </h1>
-            <h3 class="hero__sub1">
-              Deje de adivinar a quién le entrega su mercancía.
-            </h3>
-            <p class="hero__sub">
-              Innovex es el primer buró crediticio con data cruzada que le
-              permite saber exactamente con quién está haciendo negocios en
-              Venezuela.
-            </p>
-            <div class="hero__actions">
-              <a href="#cta" class="btn-primary">
-                Solicitar Demo y<br />Registrarte Gratis
-              </a>
-            </div>
+
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero__side hero__side--left"></div>
+        <div class="hero__center">
+          <h1 class="hero__title">
+            Protege tu inversión y
+            <em>elimina la morosidad en la venta directa</em>
+          </h1>
+          <p class="hero__sub1">Deje de adivinar a quién le entrega su mercancía.</p>
+          <p class="hero__sub2">
+            Innovex es el primer buró crediticio con data cruzada que le
+            permite saber exactamente con quién está haciendo negocios en Venezuela.
+          </p>
+          <br>
+          <div class="hero__actions">
+            <a href="#cta" class="btn-primary">
+              Solicitar Demo y<br>Registrarte Gratis
+            </a>
           </div>
-          <img src="/assets/images/PortadaMain.png" alt="" />
-          <img
-            src="/assets/images/SrtaEjecutiva.png"
-            alt=""
-            style="position: absolute; right: 0; top: -35"
-          />
+        </div>
+        <div class="hero__right">
+          <img src="assets/images/PortadaMain.png" alt="" class="hero__side hero__side--right">
+          <img src="assets/images/SrtaEjecutiva.png" alt="Ejecutiva" class="hero__ejecutiva">
         </div>
       </section>
 
       <!-- DIAGNÓSTICO DEL MERCADO -->
       <section class="diagnosis" id="diagnostico">
-        <div class="diagnosis-bg-circle-1"></div>
-        <div class="diagnosis-bg-circle-2"></div>
+        <div class="diagnosis__deco--tl"></div>
+        <div class="diagnosis__deco--br"></div>
         <div class="container">
-          <h2 class="section-heading diag__title">Diagnóstico del Mercado</h2>
+          <h2 class="section-title">Diagnóstico del Mercado</h2>
           <div class="diagnosis__grid">
-            <div
-              class="diag-card"
-              style="
-                opacity: 1;
-                transform: translateY(0px);
-                transition:
-                  opacity 0.6s,
-                  transform 0.6s;
-              "
-            >
-
-              <div class="diag-card__illustration">
-                <img src="/assets/images/diagnosticoMercado1.png" alt="" />
-              </div>
+            <div class="diag-card fade-up visible">
               <div class="diag-card__body">
-                <h3>Dígale adiós a la<br />"Vendedora Saltamontes"</h3>
-                <p>
-                  Evite que personas que han dejado deudas en otras empresas
-                  entren a su negocio sin que ustedes lo sepan.
-                </p>
+                <img src="assets/images/diagnosticoMercado1.png" alt="Vendedora Saltamontes">
+                <br>
+                <br>
+                <h3>Dígale adiós a la<br>"Vendedora Saltamontes"</h3>
+                <p>Evite que personas que han dejado deudas en otras empresas entren a su negocio sin que ustedes lo sepan.</p>
               </div>
             </div>
-
-            <div
-              class="diag-card"
-              style="
-                opacity: 0;
-                transform: translateY(22px);
-                transition:
-                  opacity 0.6s,
-                  transform 0.6s;
-              "
-            >
-              <div class="diag-card__illustration">
-                <img src="/assets/images/diagnosticoMercado2.png" alt="" />
-              </div>
+            <div class="diag-card fade-up visible">
               <div class="diag-card__body">
-                <h3>Elimine el Caos<br />Administrativo</h3>
-                <p>
-                  Millones de datos en tiempo real para ofrecer el análisis de
-                  riesgo más preciso del mercado.
-                </p>
+                <img src="assets/images/diagnosticoMercado2.png" alt="Caos Administrativo">
+                <br>
+                <h3>Elimine el Caos<br>Administrativo</h3>
+                <p>Millones de datos en tiempo real para ofrecer el análisis de riesgo más preciso del mercado.</p>
               </div>
             </div>
-
-            <div
-              class="diag-card"
-              style="
-                opacity: 0;
-                transform: translateY(22px);
-                transition:
-                  opacity 0.6s,
-                  transform 0.6s;
-              "
-            >
-              <div class="diag-card__illustration">
-                <img src="/assets/images/diagnosticoMercado3.png" alt="" />
-              </div>
+            <div class="diag-card fade-up visible">
               <div class="diag-card__body">
+                <img src="assets/images/diagnosticoMercado3.png" alt="Sobre-stock">
+                <br>
                 <h3>Prevenga el Sobre-stock</h3>
-                <p>
-                  No despache mercancía a quien no tiene capacidad de venta;
-                  nuestro sistema le indica si una vendedora ya tiene demasiadas
-                  colecciones activas.
-                </p>
+                <p>No despache mercancía a quien no tiene capacidad de venta; nuestro sistema le indica si una vendedora ya tiene demasiadas colecciones activas.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SEMÁFORO INTELIGENTE -->
-      <section class="semaforo" id="herramientas">
+      <!-- ══════════════════════════════════════
+           SEMÁFORO INTELIGENTE  ← SECCIÓN CORREGIDA
+      ══════════════════════════════════════ -->
+      <section class="tools" id="herramientas">
+        <!-- Círculos decorativos extra -->
+        <div class="tools__deco tools__deco--bl"></div>
+        <div class="tools__deco tools__deco--tr"></div>
+
         <div class="container">
-          <div class="semaforo__inner">
-            <img src="/assets/images/semafao.png" alt="" />
-            <div class="semaforo__text">
-              <h2 class="section-heading">El Semáforo Inteligente</h2>
-              <p class="section-sub">
-                Al registrar o buscar una candidata, el sistema activa una
-                alerta visual que indica el nivel de riesgo crediticio de forma
-                instantánea.
-              </p>
+          <div class="tools__row">
+
+            <!-- Columna 1: imagen semáforo -->
+            <div class="tools__col tools__col--img">
+              <img src="assets/images/semafao.png" alt="Semáforo Inteligente">
             </div>
-          </div>
-          <div class="data-cruzada__inner">
-            <div class="data-cruzada__text">
-              <h2 class="section-heading">Data Cruzada del Sector Cosmético</h2>
-              <p class="section-sub2">
-                Acceda a un historial de comportamiento real dentro del mercado
-                venezolano, permitiéndole tomar decisiones basadas en datos, no
-                en suposiciones.
-              </p>
+
+            <!-- Columna 2: título + párrafo centrados -->
+            <div class="tools__col tools__col--text">
+              <h2 class="section-title--sm">El Semáforo Inteligente</h2>
+              <p>Al registrar o buscar una candidata, el sistema activa una
+              alerta visual que le indica el nivel de riesgo crediticio de forma
+              instantánea.</p>
             </div>
-            <img src="/assets/images/alerta.png" alt="" />
+
+            <!-- Columna 3: triángulo de advertencia -->
+            <div class="tools__col tools__col--warn">
+              <img src="assets/images/alerta.png" alt="Advertencia de riesgo">
+            </div>
+
           </div>
+
+          <!-- Fila inferior: Data Cruzada debajo del texto semáforo (columna central) -->
+          <div class="tools__data-row">
+            <div class="tools__data-spacer"></div>
+            <div class="tools__data-text">
+              <h2 class="tools__data-title">Data Cruzada del Sector Cosmético</h2>
+              <p>Acceda a un historial de comportamiento real dentro del mercado venezolano, permitiéndole tomar decisiones basadas en datos, no en suposiciones.</p>
+            </div>
+            <div class="tools__data-spacer"></div>
+          </div>
+
         </div>
       </section>
-      <br>
+      <!-- FIN SECCIÓN CORREGIDA -->
 
       <!-- ECOSISTEMA 360° -->
-      <div class="container">
-        <div>
-          <img src="/assets/images/sistema360.png" alt="" />
+      <section class="fullimg-section">
+        <div class="container container--wide">
+          <img src="assets/images/sistema360.png" alt="Ecosistema 360°" class="fullimg">
         </div>
-      </div>
-      <br>
+      </section>
 
-      <!-- FLUJO – IMPULSA TU NEGOCIO -->
-      <div class="container">
-        <div>
-          <img src="/assets/images/sistema2.png" alt="" />
+      <!-- SISTEMA 2 -->
+      <section class="fullimg-section">
+        <div class="container container--wide">
+          <img src="assets/images/sistema2.png" alt="Sistema Innovex" class="fullimg">
         </div>
-      </div>
-      <br>
+      </section>
 
-      <div class="container">
-        <h2 class="cta-steps__title">
-          Impulsa tu Negocio con Innovex: <br />
-          Confianza, Facilidad y Crecimiento
-        </h2>
-        <div>
-          <img src="/assets/images/impulsaNegocio.png" alt="" />
+      <!-- IMPULSA TU NEGOCIO -->
+      <section class="impulsa" id="beneficios">
+        <div class="container container--wide">
+          <h2 class="impulsa__title">
+            Impulsa tu Negocio con Innovex:<br>
+            Confianza, Facilidad y Crecimiento
+          </h2>
+          <img src="assets/images/impulsaNegocio.png" alt="Impulsa tu negocio" class="fullimg">
         </div>
-      </div>
-      <br>
+      </section>
 
       <!-- ¿LISTO PARA SANAR? -->
-      <section class="cta-steps" id="cta">
+      <section class="cta-section" id="cta">
         <div class="container">
-          <h2 class="cta-steps__title">
-            ¿LISTO PARA <span>SANAR</span><br />SU FLUJO DE CAJA?
+          <h2 class="cta-section__title">
+            ¿LISTO PARA <span class="text-green">SANAR</span><br>SU FLUJO DE CAJA?
           </h2>
-          <!-- <div class="steps">
-            <div
-              class="step"
-              style="
-                opacity: 0;
-                transform: translateY(22px);
-                transition:
-                  opacity 0.6s,
-                  transform 0.6s;
-              "
-            >
-              <div class="step__num">1</div>
-              <div class="step__icon-ph">
-                <span style="font-size: 0.62rem"
-                  >🖼️ Ícono<br />Descarga App</span
-                >
-              </div>
-              <h4>Descarga la App</h4>
-              <p>
-                Disponible para Android e iOS. Instalación en menos de 2
-                minutos.
-              </p>
-            </div>
-            <div
-              class="step"
-              style="
-                opacity: 0;
-                transform: translateY(22px);
-                transition:
-                  opacity 0.6s,
-                  transform 0.6s;
-              "
-            >
-              <div class="step__num">2</div>
-              <div class="step__icon-ph">
-                <span style="font-size: 0.62rem">🖼️ Ícono<br />Registro</span>
-              </div>
-              <h4>Registra tus Datos</h4>
-              <p>
-                Completa tu perfil y datos de empresa en pocos pasos sencillos.
-              </p>
-            </div>
-            <div
-              class="step"
-              style="
-                opacity: 0;
-                transform: translateY(22px);
-                transition:
-                  opacity 0.6s,
-                  transform 0.6s;
-              "
-            >
-              <div class="step__num">3</div>
-              <div class="step__icon-ph">
-                <span style="font-size: 0.62rem">🖼️ Ícono<br />Contrato</span>
-              </div>
-              <h4>Firma tu Contrato</h4>
-              <p>
-                Firma digital en segundos y comienza a proteger tu inversión
-                hoy.
-              </p>
-            </div>
-          </div> -->
-          <div class="steps-wrapper">
-            <!-- Paso 1 -->
-            <div class="step">
-              <div class="circle-outer">
-                <div class="circle-inner">
-                  <img
-                    src="/assets/images/celular.png"
-                    alt=""
-                    style="height: 42px"
-                  />
+          <div class="steps">
+            <div class="step fade-up">
+              <div class="step__circle-outer">
+                <div class="step__circle-inner">
+                  <img src="assets/images/celular.png" alt="Descarga app">
                 </div>
-                <div class="step-number">1</div>
+                <span class="step__num">1</span>
               </div>
-              <p class="step-label">Descarga la app</p>
+              <p class="step__label">Descarga la app</p>
             </div>
-
-            <div class="connector"></div>
-
-            <!-- Paso 2 -->
-            <div class="step">
-              <div class="circle-outer">
-                <div class="circle-inner">
-                  <img
-                    src="/assets/images/Contacto.png"
-                    alt=""
-                    style="height: 42px"
-                  />
+            <div class="step__connector"></div>
+            <div class="step fade-up">
+              <div class="step__circle-outer">
+                <div class="step__circle-inner">
+                  <img src="assets/images/Contacto.png" alt="Registra datos">
                 </div>
-                <div class="step-number">2</div>
+                <span class="step__num">2</span>
               </div>
-              <p class="step-label">Registra tus datos</p>
+              <p class="step__label">Registra tus datos</p>
             </div>
-
-            <div class="connector"></div>
-
-            <!-- Paso 3 -->
-            <div class="step">
-              <div class="circle-outer">
-                <div class="circle-inner">
-                  <img
-                    src="/assets/images/Editar.png"
-                    alt=""
-                    style="height: 42px"
-                  />
+            <div class="step__connector"></div>
+            <div class="step fade-up">
+              <div class="step__circle-outer">
+                <div class="step__circle-inner">
+                  <img src="assets/images/Editar.png" alt="Firma digital">
                 </div>
-                <div class="step-number">3</div>
+                <span class="step__num">3</span>
               </div>
-              <p class="step-label">Firma digital</p>
+              <p class="step__label">Firma digital</p>
             </div>
           </div>
           <div class="cta-banner">
-            <p class="cta-banner__quote">
-              No dejes que la morosidad<br />
-              <em>Detenga tu crecimiento.</em>
-            </p>
+            <p class="cta-banner__line1">No dejes que la morosidad</p>
+            <p class="cta-banner__line2"><em>Detenga tu crecimiento.</em></p>
             <br>
-             <p class="cta-banner__quote2">
-              Regístrate en la preventa de Innovex hoy mismo
-            </p>
-            
+            <p class="cta-banner__sub">Regístrate en la preventa de Innovex hoy mismo</p>
+            <br>
             <a href="#" class="btn-cta">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                <img src="/assets/images/Icono.png" alt="" />
-              </svg>
+              <img src="assets/images/Icono.png" alt="" class="btn-cta__icon">
               QUIERO MI ESCUDO MÁGICO AHORA
             </a>
           </div>
         </div>
       </section>
     </main>
-
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__inner">
-          <img src="/assets/images/LogoFinal.png" alt="" />
-        </div>
+        <img src="assets/images/LogoFinal.png" alt="Innovex" class="footer__logo">
       </div>
     </footer>
 
     <script>
-      const hamburger = document.querySelector(".navbar__hamburger");
-      const navLinks = document.querySelector(".navbar__links");
+      const hamburger = document.querySelector('.navbar__hamburger');
+      const navLinks  = document.querySelector('.navbar__links');
       if (hamburger) {
-        hamburger.addEventListener("click", () =>
-          navLinks.classList.toggle("navbar__links--open"),
-        );
+        hamburger.addEventListener('click', () => navLinks.classList.toggle('navbar__links--open'));
       }
-      document.querySelectorAll(".navbar__links a").forEach((link) => {
-        link.addEventListener("click", () =>
-          navLinks.classList.remove("navbar__links--open"),
-        );
+      document.querySelectorAll('.navbar__links a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('navbar__links--open'));
       });
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = "1";
-              entry.target.style.transform = "translateY(0)";
-            }
-          });
-        },
-        { threshold: 0.12 },
-      );
-      document
-        .querySelectorAll(
-          ".diag-card, .flow-card, .step, .eco-device, .eco-label",
-        )
-        .forEach((el) => {
-          el.style.opacity = "0";
-          el.style.transform = "translateY(22px)";
-          el.style.transition = "opacity .6s ease, transform .6s ease";
-          observer.observe(el);
-        });
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.diag-card, .step').forEach(el => { el.classList.add('fade-up'); io.observe(el); });
     </script>
-  </body>
-</html>
+
+
+</body></html>
